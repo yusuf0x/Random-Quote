@@ -1,0 +1,70 @@
+body{
+  background: #eee;
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+.quote1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.quote2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  text-align: center;
+  min-height: 400px;
+  padding: 0 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: inset 0px -6px 15px rgb(0 0 0 / 5%), 0px 2px 0px rgb(0 0 0 / 10%), 0px 3px 10px rgb(0 0 0 / 20%);
+}
+
+.quote2 p{
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.quote2 h3{
+  font-size: 2rem;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Roboto Mono', monospace;
+      /*font-family: "Jacques Francois", "Garamond", "Palatino", "Georgia", "serif";*/
+}
+.btn {
+   margin-top: 20px;
+    padding: 20px;
+   color: #2ba6cb;
+   border: none;
+   border-radius: 10px;
+   background-color: white;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+@media(max-width:1280px){
+  .container{width: 95%;}
+}
+
+@media(max-width:900px){
+  .quote2{width:600px;}
+}
+
+@media(max-width:480px){
+  .quote2 p{font-size: 1.2rem;}
+  .quote2 h3{font-size: 1.5rem;}
+  .quote2{
+    width: 300px;
+  }
+}
